@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+
+}
+
+
+
+.logo img {
+    width: 100%;
+}
+
+header div.logo{
+    height: 6rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+header .form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    position: relative;
+}
+
+
+
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border:  solid 1px rgba(61, 61, 61, 0.61);
+    height: 2.5rem;
+    outline: none;
+    padding: .75rem;
+    border-radius: 5px;
+    color: #666;
+    width: 100%;
+}
+
+header .form .submit{
+    background-color: transparent;
+    border: none;
+    color: #666;
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin-left: 2rem;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+article:hover {
+    
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  
+}
+
+.fa-truck{
+    transition: all .3s linear;
+}
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+}
+
+.logo {
+    margin: auto;
+}
+
+.description {
+    transform: scaleY(0);
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: top;
+    height: 0;
+}
+
+article:hover .description {
+    transform: scaleY(1);
+    height: auto;
+}
+
+
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    /* main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } */
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    nav{
+        font-size: 12px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2rem;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    header .form{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        position: relative;
+    }
+}
